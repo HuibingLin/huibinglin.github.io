@@ -78,6 +78,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     animation: containerGlow 3s ease-in-out infinite;
+    flex-shrink: 0;
 }
 
 .profile-image-container::before {
@@ -185,9 +186,8 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .title {
@@ -358,17 +358,56 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+
     .profile-section {
         flex-direction: column-reverse;
         text-align: center;
+        gap: 1.5rem;
     }
 
     .profile-info {
         text-align: center;
+        width: 100%;
+    }
+
+    .profile-image-container {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        word-break: break-word;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .motto {
+        font-size: 0.9rem;
+        max-width: 100%;
+        margin: 0.8rem auto;
     }
 
     .contact-brief {
         justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .contact-brief span {
+        display: block;
+        text-align: center;
     }
 
     .experience-header, .education-header {
@@ -378,7 +417,15 @@ ul {
     }
 
     .period {
-        margin-left: 1rem;
+        margin-left: 0;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
