@@ -183,11 +183,12 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .title {
@@ -384,8 +385,9 @@ ul {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.3;
+        white-space: normal;
         word-break: break-word;
     }
 
@@ -458,7 +460,7 @@ ul {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 180px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
