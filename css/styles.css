@@ -536,6 +536,31 @@ ul {
     margin-bottom: 2.5rem;
 }
 
+.project-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--background-color);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.project-item:first-child {
+    margin-top: 1rem;
+}
+
+.project-item h4 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project-item .period {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
 .motto {
     font-style: italic;
     color: var(--accent-color);
