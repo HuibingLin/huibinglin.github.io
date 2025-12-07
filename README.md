@@ -4,7 +4,7 @@ Personal portfolio and professional resume website for Huibing (Natalie) Lin.
 
 ## About
 
-This is a professional resume website showcasing my experience as a Software Engineer. The site features an interactive carousel, responsive design, and comprehensive information about my education, work experience, and technical skills.
+This is a website showcasing my experience as a Software Engineer. The site features an interactive carousel, responsive design, and comprehensive information about my education, work experience, and technical skills.
 
 ## Profile
 
