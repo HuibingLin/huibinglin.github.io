@@ -8,6 +8,7 @@
     <meta name="keywords" content="Natalie Lin, Huibing Lin, software engineer Sydney, full stack developer, React developer, TypeScript developer, Java Spring Boot, Python FastAPI, healthcare software engineer">
     <meta name="author" content="Natalie (Huibing) Lin">
     <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://huibinglin.github.io/">
 
     <meta property="og:type" content="website">
@@ -17,51 +18,93 @@
     <meta property="og:url" content="https://huibinglin.github.io/">
     <meta property="og:site_name" content="Natalie Lin Portfolio">
     <meta property="og:image" content="https://huibinglin.github.io/images/self1.jpg">
+    <meta property="og:image:alt" content="Natalie Huibing Lin, Full Stack Software Engineer in Sydney">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Natalie (Huibing) Lin | Full Stack Software Engineer">
     <meta name="twitter:description" content="Sydney-based Full Stack Software Engineer with healthcare software experience across frontend, backend, deployment, and production support.">
     <meta name="twitter:image" content="https://huibinglin.github.io/images/self1.jpg">
+    <meta name="twitter:image:alt" content="Natalie Huibing Lin, Full Stack Software Engineer in Sydney">
     <meta name="theme-color" content="#ff9ecd">
 
     <link rel="stylesheet" href="css/styles.css">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Natalie (Huibing) Lin",
-            "alternateName": "Huibing Lin",
-            "jobTitle": "Full Stack Software Engineer",
-            "url": "https://huibinglin.github.io/",
-            "image": "https://huibinglin.github.io/images/self1.jpg",
-            "email": "mailto:hblin0315@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Sydney",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            "sameAs": [
-                "https://github.com/HuibingLin"
-            ],
-            "knowsAbout": [
-                "React",
-                "TypeScript",
-                "Java Spring Boot",
-                "Python FastAPI",
-                "Docker",
-                "REST APIs",
-                "Healthcare Software",
-                "Full Stack Development"
-            ],
-            "alumniOf": [
+            "@graph": [
                 {
-                    "@type": "CollegeOrUniversity",
-                    "name": "Hong Kong Baptist University"
+                    "@type": "WebSite",
+                    "@id": "https://huibinglin.github.io/#website",
+                    "url": "https://huibinglin.github.io/",
+                    "name": "Natalie Lin Portfolio",
+                    "description": "Portfolio and resume of Natalie (Huibing) Lin, a Sydney-based Full Stack Software Engineer.",
+                    "publisher": {
+                        "@id": "https://huibinglin.github.io/#person"
+                    },
+                    "inLanguage": "en-AU"
                 },
                 {
-                    "@type": "CollegeOrUniversity",
-                    "name": "Beijing Institute of Technology, Zhuhai"
+                    "@type": "ProfilePage",
+                    "@id": "https://huibinglin.github.io/#webpage",
+                    "url": "https://huibinglin.github.io/",
+                    "name": "Natalie (Huibing) Lin | Full Stack Software Engineer in Sydney",
+                    "description": "Sydney-based Full Stack Software Engineer with 3+ years of experience building healthcare software using React, TypeScript, Java Spring Boot, Python FastAPI, Docker, and REST APIs.",
+                    "isPartOf": {
+                        "@id": "https://huibinglin.github.io/#website"
+                    },
+                    "about": {
+                        "@id": "https://huibinglin.github.io/#person"
+                    },
+                    "primaryImageOfPage": {
+                        "@type": "ImageObject",
+                        "url": "https://huibinglin.github.io/images/self1.jpg"
+                    },
+                    "inLanguage": "en-AU"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://huibinglin.github.io/#person",
+                    "name": "Natalie (Huibing) Lin",
+                    "alternateName": [
+                        "Huibing Lin",
+                        "Natalie Lin"
+                    ],
+                    "jobTitle": "Full Stack Software Engineer",
+                    "description": "Sydney-based Full Stack Software Engineer with healthcare software experience across frontend, backend, deployment, and production support.",
+                    "url": "https://huibinglin.github.io/",
+                    "image": "https://huibinglin.github.io/images/self1.jpg",
+                    "email": "mailto:hblin0315@gmail.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Sydney",
+                        "addressRegion": "NSW",
+                        "addressCountry": "AU"
+                    },
+                    "sameAs": [
+                        "https://github.com/HuibingLin",
+                        "https://github.com/HuibingLin/LiteSnap"
+                    ],
+                    "knowsAbout": [
+                        "React",
+                        "TypeScript",
+                        "Java Spring Boot",
+                        "Python FastAPI",
+                        "Docker",
+                        "REST APIs",
+                        "Healthcare Software",
+                        "Full Stack Development",
+                        "Electron"
+                    ],
+                    "alumniOf": [
+                        {
+                            "@type": "CollegeOrUniversity",
+                            "name": "Hong Kong Baptist University"
+                        },
+                        {
+                            "@type": "CollegeOrUniversity",
+                            "name": "Beijing Institute of Technology, Zhuhai"
+                        }
+                    ]
                 }
             ]
         }
@@ -76,13 +119,14 @@
                     <p class="title">Software Engineer | Full Stack Developer</p>
                     <p class="motto">Full stack software engineer building reliable healthcare systems across frontend, backend, deployment, and production support.</p>
                     <div class="contact-brief">
-                        <span>📨 hblin0315@gmail.com</span>
+                        <span>📨 <a href="mailto:hblin0315@gmail.com">hblin0315@gmail.com</a></span>
                         <span>📍 Sydney NSW, Australia</span>
+                        <span>💻 <a href="https://github.com/HuibingLin" target="_blank" rel="me noopener noreferrer">GitHub: HuibingLin</a></span>
                     </div>
                 </div>
                 <div class="profile-image-container">
                     <div class="profile-image-frame">
-                        <img src="images/self1.jpg" alt="Profile Picture" class="profile-image">
+                        <img src="images/self1.jpg" alt="Natalie Huibing Lin, Full Stack Software Engineer" class="profile-image">
                     </div>
                 </div>
             </div>
