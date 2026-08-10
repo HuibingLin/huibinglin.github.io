@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie (Huibing) Lin | Full Stack Software Engineer in Sydney</title>
-    <meta name="description" content="Natalie (Huibing) Lin is a Sydney-based Full Stack Software Engineer with 3+ years of experience building healthcare software using React, TypeScript, Java Spring Boot, Python FastAPI, Docker, and REST APIs.">
-    <meta name="keywords" content="Natalie Lin, Huibing Lin, software engineer Sydney, full stack developer, React developer, TypeScript developer, Java Spring Boot, Python FastAPI, healthcare software engineer">
+    <meta name="description" content="Natalie (Huibing) Lin is a Sydney-based Full Stack Software Engineer building healthcare systems and LiteSnap, a Tauri and Rust desktop screenshot tool.">
+    <meta name="keywords" content="Natalie Lin, Huibing Lin, software engineer Sydney, full stack developer, React developer, TypeScript developer, Rust developer, Tauri, Java Spring Boot, Python FastAPI, healthcare software engineer, LiteSnap">
     <meta name="author" content="Natalie (Huibing) Lin">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_AU">
     <meta property="og:title" content="Natalie (Huibing) Lin | Full Stack Software Engineer">
-    <meta property="og:description" content="Sydney-based Full Stack Software Engineer building production healthcare software with React, TypeScript, Java Spring Boot, Python FastAPI, Docker, and REST APIs.">
+    <meta property="og:description" content="Sydney-based Full Stack Software Engineer building production healthcare software and LiteSnap, a lightweight Tauri and Rust desktop screenshot tool.">
     <meta property="og:url" content="https://huibinglin.github.io/">
     <meta property="og:site_name" content="Natalie Lin Portfolio">
     <meta property="og:image" content="https://huibinglin.github.io/images/self1.jpg">
@@ -22,7 +22,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Natalie (Huibing) Lin | Full Stack Software Engineer">
-    <meta name="twitter:description" content="Sydney-based Full Stack Software Engineer with healthcare software experience across frontend, backend, deployment, and production support.">
+    <meta name="twitter:description" content="Sydney-based Full Stack Software Engineer building healthcare systems and LiteSnap with Tauri, Rust, React, and TypeScript.">
     <meta name="twitter:image" content="https://huibinglin.github.io/images/self1.jpg">
     <meta name="twitter:image:alt" content="Natalie Huibing Lin, Full Stack Software Engineer in Sydney">
     <meta name="theme-color" content="#ff9ecd">
@@ -48,7 +48,7 @@
                     "@id": "https://huibinglin.github.io/#webpage",
                     "url": "https://huibinglin.github.io/",
                     "name": "Natalie (Huibing) Lin | Full Stack Software Engineer in Sydney",
-                    "description": "Sydney-based Full Stack Software Engineer with 3+ years of experience building healthcare software using React, TypeScript, Java Spring Boot, Python FastAPI, Docker, and REST APIs.",
+                    "description": "Sydney-based Full Stack Software Engineer building healthcare systems and LiteSnap, a lightweight desktop screenshot tool powered by Tauri, Rust, React, and TypeScript.",
                     "isPartOf": {
                         "@id": "https://huibinglin.github.io/#website"
                     },
@@ -87,6 +87,8 @@
                     "knowsAbout": [
                         "React",
                         "TypeScript",
+                        "Rust",
+                        "Tauri",
                         "Java Spring Boot",
                         "Python FastAPI",
                         "Docker",
@@ -105,6 +107,19 @@
                             "name": "Beijing Institute of Technology, Zhuhai"
                         }
                     ]
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://huibinglin.github.io/#litesnap",
+                    "name": "LiteSnap",
+                    "url": "https://github.com/HuibingLin/LiteSnap",
+                    "applicationCategory": "UtilitiesApplication",
+                    "operatingSystem": "Windows",
+                    "softwareVersion": "2.0.0",
+                    "description": "A lightweight screenshot and annotation utility with region capture, markup tools, scrolling capture, and pin-on-screen workflows.",
+                    "author": {
+                        "@id": "https://huibinglin.github.io/#person"
+                    }
                 }
             ]
         }
@@ -145,6 +160,7 @@
                     <li>Designed hospital report templates and enabled production printing through JasperReports Server</li>
                     <li>Implemented WebSocket-based real-time features for AI-assisted clinical analysis</li>
                     <li>Led client-facing requirement discussions and translated operational needs into shipped software</li>
+                    <li>Shipped LiteSnap v2.0.0 for Windows after migrating its desktop runtime from Electron to Tauri 2 and Rust</li>
                 </ul>
             </section>
             
@@ -225,15 +241,20 @@
 
             <section class="projects">
                 <h2>Personal Projects</h2>
-                <div class="project-item">
-                    <h4><a href="https://github.com/HuibingLin/LiteSnap" target="_blank" rel="noopener noreferrer">LiteSnap</a></h4>
-                    <p class="role"><strong>Project:</strong> Self-built lightweight screenshot and annotation desktop widget</p>
-                    <p class="tech-stack"><strong>Technical Stack:</strong> Electron, electron-vite, React 19, TypeScript, Zustand, electron-builder</p>
+                <div class="project-item featured-project">
+                    <div class="project-heading">
+                        <h4><a href="https://github.com/HuibingLin/LiteSnap" target="_blank" rel="noopener noreferrer">LiteSnap</a></h4>
+                        <span class="release-badge">v2.0.0 · Windows release</span>
+                    </div>
+                    <p class="role"><strong>Project:</strong> Self-built lightweight screenshot and annotation desktop utility</p>
+                    <p class="tech-stack"><strong>Technical Stack:</strong> Tauri 2, Rust, React 19, TypeScript, Vite, Zustand</p>
+                    <p class="project-summary">Rebuilt the desktop foundation around a lighter native runtime while preserving the complete capture-to-share workflow.</p>
                     <ul>
-                        <li>Built a fast screenshot tool for macOS and Windows with region capture, annotation, scroll capture, and pin-on-screen workflows</li>
-                        <li>Implemented everyday productivity features including global hotkeys, resizable capture regions, markup tools, and floating always-on-top pins</li>
-                        <li>Packaged cross-platform installers for macOS Apple Silicon and Windows using electron-builder</li>
-                        <li>Designed the app as a tray-first utility with English, Simplified Chinese, and Traditional Chinese support</li>
+                        <li>Migrated the application from Electron to Tauri 2 and Rust, reducing runtime overhead and creating a smaller, lighter release experience</li>
+                        <li>Shipped a stable Windows-first v2.0.0 release with native capture, global shortcuts, system tray integration, and always-on-top pin windows</li>
+                        <li>Built adjustable region capture plus rectangle, ellipse, arrow, pen, highlighter, mosaic, text, and emoji annotation tools</li>
+                        <li>Implemented seamless scrolling capture with live stitch previews for browsers, PDFs, and chat applications</li>
+                        <li>Delivered a localized tray-first experience in English, Simplified Chinese, and Traditional Chinese; macOS release preparation is in progress</li>
                     </ul>
                 </div>
             </section>
@@ -246,6 +267,7 @@
                         <div class="skill-tags">
                             <span>TypeScript</span>
                             <span>JavaScript</span>
+                            <span>Rust</span>
                             <span>Java</span>
                             <span>Python</span>
                             <span>PHP</span>
@@ -257,6 +279,7 @@
                         <h3>Frontend</h3>
                         <div class="skill-tags">
                             <span>React</span>
+                            <span>Tauri 2</span>
                             <span>Angular</span>
                             <span>Electron</span>
                             <span>Webpack</span>
@@ -299,6 +322,7 @@
                             <span>Nginx</span>
                             <span>Linux</span>
                             <span>NSSM</span>
+                            <span>Vite</span>
                             <span>electron-vite</span>
                             <span>electron-builder</span>
                             <span>JasperReports Server</span>
