@@ -528,6 +528,42 @@ ul {
     font-weight: 500;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 1rem 0;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 999px;
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-link.primary,
+.project-link:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+}
+
+.project-link:focus-visible {
+    outline: 3px solid rgba(255, 158, 205, 0.35);
+    outline-offset: 3px;
+}
+
 .featured-project li + li {
     margin-top: 0.45rem;
 }

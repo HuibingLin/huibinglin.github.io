@@ -25,6 +25,7 @@ Full Stack Software Engineer with 3+ years' experience building and supporting p
 - Implemented WebSocket-based real-time features for AI-assisted clinical analysis
 - Led client-facing requirement discussions and translated operational needs into shipped software
 - Shipped LiteSnap v2.0.0 for Windows after migrating its desktop runtime from Electron to Tauri 2 and Rust
+- Designed, built, and deployed Slides Bloom, a full-stack platform that converts PowerPoint click animations into step-by-step PDF pages
 
 ## Education
 
@@ -46,7 +47,7 @@ Full stack engineer delivering healthcare software for hospital and clinic opera
 React, TypeScript, Java, Spring Boot, Redis, MySQL, Docker Swarm, REST API, JasperReports Server
 
 #### Smart Clinic Agent
-**Front-End Developer** (Apr 2024 – Oct 2024)  
+**Front-End Developer** (Apr 2025 – Oct 2025)
 React, WebSocket, Docker Swarm
 
 #### Barcode Medication Administration System
@@ -66,22 +67,33 @@ Self-built lightweight screenshot and annotation desktop utility. Version 2.0.0 
 - Implemented scrolling capture with live stitch previews for browsers, PDFs, and chat applications
 - Delivered English, Simplified Chinese, and Traditional Chinese localization
 
+### [Slides Bloom](https://slidesbloom.duckdns.org/)
+Free online PowerPoint click-animation to PDF converter. [View source on GitHub](https://github.com/HuibingLin/slides-bloom).
+
+**Tech stack:** Next.js 15, React 19, TypeScript, Python 3.12, FastAPI, Celery, Redis, LibreOffice, Docker, Nginx
+
+- Expands PowerPoint entrance animations into cumulative PDF pages while preserving slide and click order
+- Supports resumable 8 MiB chunk uploads for files up to 20 MiB, background conversion, and live progress
+- Provides page-by-page PDF preview, browser viewing, and downloads without installation or an account
+- Runs as a containerized processing pipeline with scheduled cleanup of uploaded and generated files
+- Supports English, Traditional Chinese, and Simplified Chinese
+
 ## Technical Skills
 
 ### Programming Languages
 TypeScript, JavaScript, Rust, Java, Python, PHP, HTML5, CSS3
 
 ### Frontend
-React, Tauri 2, Angular, Electron, Webpack, WebSocket, Zustand, Android WebView, Responsive UI Development
+React, Next.js, Tauri 2, Angular, Electron, Webpack, WebSocket, Zustand, Android WebView, Responsive UI Development
 
 ### Backend & API
-Spring Boot, FastAPI, Node.js, Laravel, REST API, Microservices, API Integration
+Spring Boot, FastAPI, Celery, Node.js, Laravel, REST API, Microservices, API Integration
 
 ### Databases
 MySQL, MongoDB, Redis, CouchDB, PouchDB
 
 ### Cloud, DevOps & Tools
-Git, GitLab, Docker, Docker Swarm, CI/CD, Nginx, Linux, NSSM, Vite, electron-vite, electron-builder, JasperReports Server
+Git, GitLab, Docker, Docker Swarm, CI/CD, Nginx, Linux, NSSM, LibreOffice, Vite, electron-vite, electron-builder, JasperReports Server
 
 ### Methodologies & Languages
 Agile, Scrum, Production Support, Cross-functional Collaboration  
@@ -91,7 +103,7 @@ English, Mandarin, Cantonese
 
 - Responsive personal portfolio layout
 - SEO metadata, Open Graph, Twitter cards
-- JSON-LD structured data (`WebSite`, `ProfilePage`, `Person`)
+- JSON-LD structured data (`WebSite`, `ProfilePage`, `Person`, `SoftwareApplication`, `WebApplication`)
 - `robots.txt` and `sitemap.xml`
 
 ## Technologies Used
